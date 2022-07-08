@@ -1,0 +1,79 @@
+/* @mixin style-text (tamanho, cor, peso) {
+    font-size: tam;
+    font-weight:peso;
+    color:cor;
+} */
+.cabecalho {
+  background-color: #1d539e;
+  height: 50vh;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+}
+
+.cabecalho-titulo {
+  font-size: 3em;
+  font-weight: bold;
+  padding: 0.3em;
+}
+
+.cabecalho-subtitulo {
+  padding: 1em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cabecalho-titulo {
+    font-size: 1.4em;
+  }
+
+  .cabecalho-subtitulo {
+    font-size: 0.9em;
+  }
+}
+main {
+  display: flex;
+  justify-content: center;
+  order: 1;
+  position: relative;
+}
+
+.card-free, .card-basico, .card-profissional {
+  font-family: "Open Sans", sans-serif;
+  padding: 5px;
+  width: 25vw;
+  border-radius: 8px;
+  background-color: #ffcc29;
+  border-color: #1E2338;
+  height: 50vh;
+  margin: 250px 10px 0 10px;
+}
+
+/*.card-free__titulo, .card-basico__titulo, .card-profissional__titulo {
+    @include style-text(14px, $black, 400);
+}*/
+.card-free__preco, .card-basico__preco,
+.card-profissional__preco {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.card-free__condicao, .card-basico__condicao,
+.card-profissional__condicao {
+  font-size: 18px;
+  font-weight: 400;
+  color: #828799;
+}
+
+.card-free__descricao, .card-basico__descricao,
+.card-profissional__descricao {
+  font-size: 14px;
+  font-weight: 400;
+  color: #828799;
+}/*# sourceMappingURL=style.css.map */

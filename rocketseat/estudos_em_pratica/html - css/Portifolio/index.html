@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Document</title>
+        <style type="text/css">
+            body {
+                color:#E9A6A6;
+                background-color: #1F1D36;
+            }
+
+            .bg-caixa {
+                background-color: #3F3351;
+            }
+
+            .bg-tecnologia {
+                background-color: #864879;
+            }
+
+            .borda {
+                border-color: #E9A6A6 ;
+            }
+            
+            body::-webkit-scrollbar {
+                width: 12px;
+            }
+
+            body::-webkit-scrollbar-track {
+                background: #1F1D36;
+            }
+            
+            body::-webkit-scrollbar-thumb {
+                background-color: #1F1D36;
+                border-radius: 20px;
+                border: 1.5px solid #864879;
+            }
+
+            body::-webkit-scrollbar-thumb:hover {
+                background-color: #3F3351;
+                border-radius: 20px;
+                border: 3px solid #3F3351;
+            }
+        </style>
+    </head>
+
+    <body class=" grid grid-cols-3 font-poppins scr">
+        <div class="p-10 col-start-1 col-end-1">
+            <header class="bg-caixa mb-5 p-4 rounded-xl flex flex-col gap-2
+             items-center drop-shadow-md">
+                <img class="rounded-full border-2 borda p-1" src="./assets/avatar.jpeg"
+                    alt="imagem de perfil" width="168px">
+                <h1 class="font-bold">Daniela Nogueira Rampim</h1>
+                <p class=" font-light">Front End Developer</p>
+            </header>
+            <section class="bg-caixa p-4 rounded-xl mb-5 drop-shadow-md">
+                <h2 class="font-bold mb-4 ">Contatos</h2>
+                <ul class=" font-light">
+                    <li class="flex gap-2 mb-3">
+                        <img src="./assets/github.png" alt="icone github">
+                        <a href="https://github.com/nogueiraDani" target="_blank">nogueiraDani</a>
+                    </li>
+                    <li class="flex gap-2 mb-3">
+                        <img src="./assets/linkedin.png" alt="icone linkedin">
+                        <a href="https://www.linkedin.com/in/daniela-nogueira-rampim/"
+                            target="_blank">daniela-nogueira-rampim</a>
+                    </li>
+                    <li class="flex gap-2 mb-3">
+                        <img src="./assets/mail.png" alt="icone email">
+                        <a href="mailto:danielanogueira.dev@gmail.com">danielanogueira.dev@gmail.com</a>
+                    </li>
+                    <li class="flex gap-2 mb-3">
+                        <img src="./assets/map-pin.png" alt="icone mapa">
+                        <a
+                            href="https://www.google.com.br/maps/place/Blumenau,+SC/@-26.8560346,-49.2391916,11z/data=!3m1!4b1!4m5!3m4!1s0x94df1e408b5c3095:0xacfb8520bc1a7644!8m2!3d-26.9165792!4d-49.0717331">Blumenau-SC,
+                            Brazil</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="bg-caixa p-4 rounded-xl mb-5 drop-shadow-md">
+                <h2 class="font-bold mb-2 ">Tecnologias</h2>
+                <ul class="flex justify-evenly flex-wrap font-light text-sm text-white">
+                    <li class="bg-tecnologia p-2 rounded-lg m-1">HTML5</li>
+                    <li class="bg-tecnologia p-2 rounded-lg m-1">CSS3</li>
+                    <li class="bg-tecnologia p-2 rounded-lg m-1">Git</li>
+                    <li class="bg-tecnologia p-2 rounded-lg m-1">Github</li>
+                    <li class="bg-tecnologia p-2 rounded-lg m-1">Javascript</li>
+                    <li class="bg-tecnologia p-2 rounded-lg m-1">TailwindCss</li>
+                </ul>
+            </section>
+            <section class="bg-caixa p-4 rounded-xl mb-5 drop-shadow-md">
+                <h2 class="font-bold mb-2 ">Experiências</h2>
+                <ul class=" font-light list-disc list-inside">
+                    <li> Modelista
+                        <p class="ml-5">2017-atual - Cia Hering</p>
+                        <p class="ml-5">Modelista adulto e infantil - jeans, tecido plano e malha</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="bg-caixa p-4 rounded-xl mb-5 drop-shadow-md">
+                <h2 class="font-bold mb-2 ">Educação</h2>
+                <ul class=" font-light list-disc list-inside">
+                    <li>Rocketseat</h3>
+                        <p class="ml-5">2021-atual - Discover</p>
+                    </li>
+                    <li>Alura
+                        <p class="ml-5">2021-atual - Iniciante em Programação </p>
+                    </li>
+                    <li>Alura
+                        <p class="ml-5">2021-atual - Front-end </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <main class="col-start-2 col-end-4 mb-4 pt-10 pr-10 drop-shadow-md">
+            <div class="bg-caixa  p-4 rounded-xl mb-5 flex justify-between">
+                <h2 class="font-bold">Meus projetos</h2>
+                <a class="text-sm font-light" href="#">Veja todos</a>
+            </div>
+            <div>
+                <a href="https://github.com/nogueiraDani/hello-word.git"></a>
+            </div>
+        </main>
+
+    </body>
+
+</html>

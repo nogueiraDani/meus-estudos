@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./reset.css">
+
+        <title>Inscreva-se</title>
+    </head>
+
+    <body class="">
+        <div id="caixa-formulario"
+            class=" hidden z-0 absolute left-[5vw] top-[20vh] text-[#6C63FF] font-poppins w-[90vw] h-[60vh] rounded-2xl backdrop-blur-md bg-white/20 drop-shadow-lg p-8 duration-500">
+            <form class="flex flex-col items-center mx-auto " action="">
+                <div class="flex flex-col">
+                    <label class="mb-4 bg-slate-300/60  w-max p-4 rounded" for="nome">Nome Completo:</label>
+                    <input
+                        class="w-[45vw] mb-6 rounded placeholder:font-light placeholder:text-sm focus:border-[#6C63FF]"
+                        type="text" required placeholder="Nome Sobrenome">
+                </div>
+                <div class="flex flex-col">
+                    <label class="mb-4 bg-slate-300/60 w-max p-4 rounded" for="nome">Email:</label>
+                    <input
+                        class="w-[45vw] mb-6 rounded placeholder:font-light placeholder:text-sm focus:border-[#6C63FF]"
+                        type="email" required placeholder="nome@dominio.com">
+                </div>
+                <div>
+                    <button
+                        class="w-[10vw] bg-slate-400/60 hover:bg-[#6C63FF] hover:text-white p-4 rounded-lg font-semibold mb-3 ">Enviar</button>
+                        <p class="text-center text-sm font-light">
+                            *Esc para voltar
+                        </p>
+                </div>
+            </form>
+        </div>
+        <main class="z-10 lg:flex lg:flex-col font-poppins h-screen justify-between duration-500">
+            <img class="w-[100vw] h-auto" src="./assets/top-image.svg" alt="imagem de fundo">
+            
+            
+            <div class="lg:flex lg:flex-row w-screen mx-auto lg:m-0 lg:justify-evenly lg:-mb-14 lg:items-center">
+            
+            
+                <div class="flex flex-col w-[90vw] lg:w-2/5 p-4 mx-auto lg:mx-0">
+                    <h1 class="text-2xl lg:text-4xl font-bold uppercase text-center mx-auto lg:m-0 text-[#6C63FF]">Ready to launch in...</h1>
+                    
+                    <div class="flex flex-row text-sm font-light text-[#C8C8C8] lg:mt-5 2xl:mt-8 w-[70vw] lg:w-[550px] justify-between lg:justify-around p-4 mx-auto ">
+                        <p class="">Dias</p>
+                        <p class="">Horas</p>
+                        <p class="">Minutos</p>
+                        <p class="">Segundos</p>
+                    </div>
+
+                    <p id="tempo-faltante" class=" w-[70vw] lg:w-[550px] text-4xl lg:text-7xl text-[#4D4C59] text-center mx-auto"></p>
+
+                    <p class="text-sm text-[#9C9AB6] text-center mt-5 2xl:mt-12 ">Inscreva-se para saber mais sobre o
+                        lançamento</p>
+
+                    <button id="btn-inscrever"
+                        class="w-40 h-12 rounded-xl text-white bg-[#6C63FF] hover:bg-[#4540a5] mb-7 mt-4 2xl:mt-8 mx-auto">Inscreva-se</button>
+                </div>
+
+                <img class=" w-[300px] lg:w-[400px] 2xl:w-[600px] h-auto duration-500 mx-auto lg:m-0" src="./assets/rocket.svg" alt="">
+            </div>
+            <img class="invisible sm:visible w-[100vw] h-auto" src="./assets/bottom-image.svg" alt="imagem de fundo">
+        </main>
+        <script src="./script.js"></script>
+    </body>
+
+</html>

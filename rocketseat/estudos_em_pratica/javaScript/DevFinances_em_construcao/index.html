@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Document</title>
+    </head>
+    
+
+    <body class="font-poppins bg-[#E5E5E5]">
+        <div class="z-10">
+
+            <header class="bg-[#2D4A22] h-[29vh]">
+                <img class="mx-auto pt-[3.5vh]" src="./assets/logo.svg" alt="Logo">
+            </header>
+            
+
+            <main>
+                
+                <section class="gap-[2.2vw] flex mx-[11vw] mt-[-12.5vh] ">
+                    <div
+                        class="flex flex-col w-[24vw] bg-white h-[16.5vh] px-[1.8vw] py-[2.6vh] rounded-lg drop-shadow-md">
+                        <div class="flex justify-between">
+                            <p>Entradas</p>
+                            <img id="icone-entrada" class="w-8 h-auto hover:w-9" src="./assets/Entradas.png" alt="icone entradas" >
+                        </div>
+                        <p class="text-4xl">R$ 0,00</p>
+                    </div>
+                    <div
+                        class="flex flex-col w-[24vw] bg-white h-[16.5vh] px-[1.8vw] py-[2.6vh] rounded-lg drop-shadow-md">
+                        <div class="flex justify-between">
+                            <p>Saídas</p>
+                            <img id="icone-saida" class="w-8 h-auto hover:w-9" src="./assets/saidas.png" alt="icone saidas">
+                        </div>
+                        <p class="text-4xl">R$ 0,00</p>
+                    </div>
+                    <div
+                        class="flex flex-col w-[24vw] bg-[#49AA26] text-white h-[16.5vh] px-[1.8vw] py-[2.6vh] rounded-lg drop-shadow-md">
+                        <div class="flex justify-between">
+                            <p>Total</p>
+                            <img src="./assets/Total.png" alt="icone total">
+                        </div>
+                        <p class="text-4xl">R$ 0,00</p>
+                    </div>
+                </section>
+                
+                <section class="mt-[7.8vh] mb-[2.4vh]">
+                    <div class="flex justify-between text-[#969CB2] w-[77.7vw] mx-auto py-[2.4vh] px-[2vw]">
+                        <p>Descrição</p>
+                        <p>Valor</p>
+                        <p>Data</p>
+                    </div>
+                    <ul>
+                        <li class="flex justify-between bg-white w-[77.7vw] mx-auto py-[2.4vh] px-[2vw] mb-[1vh]">
+                            <p>Item 1</p>
+                            <p>Valor</p>
+                            <p class="text-[#969CB2]">Data</p>
+                        </li>
+                        <li class="flex justify-between bg-white w-[77.7vw] mx-auto py-[2.4vh] px-[2vw] mb-[1vh]">
+                            <p>Item 1</p>
+                            <p>Valor</p>
+                            <p class="text-[#969CB2]">Data</p>
+                        </li>
+                        <li class="flex justify-between bg-white w-[77.7vw] mx-auto py-[2.4vh] px-[2vw] mb-[1vh]">
+                            <p>Item 1</p>
+                            <p>Valor</p>
+                            <p class="text-[#969CB2]">Data</p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="form-nova-despesa" class="hidden">
+                    <div class=" w-[568px] h-max bg-[#E5E5E5] p-5 z-0 top-[25vh] left-[25vw] absolute drop-shadow-md">
+                        <form action="">
+                            <h2 class="mb-6">Nova Transação</h2>
+                            <div class="flex flex-col">
+                                <input class="border-none rounded-md text-sm my-1 h-8 px-2" type="text" placeholder="Descrição">
+                                <input class="border-none rounded-md text-sm my-2 h-8 px-2" type="number" name="" id="">
+                            </div>
+                            <figcaption class="text-[12px] text-gray-500 mb-4">Use o sinal - (negativo) para despesas e , (virgula)
+                                para causas decimais</figcaption>
+                            <input class="mt-1 border-none rounded-md mb-8 h-8 px-2" type="date" name="" id="" placeholder="dd/mm/yyyy">
+                            <div class="flex justify-center gap-2 mb-4">
+                                <button class=" w-[200px] bg-white border-red-500 p-3 rounded-md text-red-400">Cancelar</button>
+                                <button class=" w-[200px] p-3 rounded-md bg-[#49AA26] text-white">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                
+
+            </main>
+        </div>
+
+    </body>
+
+</html>

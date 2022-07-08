@@ -1,0 +1,35 @@
+@corDeTexto: #ff8080; // variavel para cor
+@corDeFundo: #d3c2b8; // variavel do fundo
+@largura: 0.50;
+@corAlternativa: brown;
+
+.drop-shadow(@tamanho) { //mixin, é tipo uma função @tamanho é um parametro.
+    color:rgb(79, 95, 95);
+    text-decoration: underline;
+    font-size: @tamanho;
+}
+
+h1 {
+    color: @corDeTexto;
+    background-color: @corDeFundo;
+}
+
+p {
+    color: @corDeTexto;
+
+    b {
+        font-size: 20px;
+        font-style: italic;
+    }
+}
+
+div {
+    width: percentage(@largura); // funcao para % com variavel
+    color: if(iscolor(@corAlternativa), @corAlternativa, gray); // funcao verificando a cor da variavel.
+
+}
+
+article {
+    .drop-shadow(16px);//
+}
+

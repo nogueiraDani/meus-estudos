@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <style type="text/css">
+            body::-webkit-scrollbar {
+                width: 12px;
+            }
+
+            body::-webkit-scrollbar-track {
+                background: #000000;
+            }
+
+            body::-webkit-scrollbar-thumb {
+                background-color: #000000;
+                border-radius: 20px;
+                border: 1.5px solid #C12A23;
+            }
+
+            body::-webkit-scrollbar-thumb:hover {
+                background-color: #C12A23;
+                border-radius: 20px;
+                border: 3px solid #C12A23;
+            }
+        </style>
+        <title>Rocketflix</title>
+    </head>
+
+    <body
+        class="flex flex-col pt-28 items-center h-screen font-poppins bg-gradient-to-tr from-[#102D71] via-black to-[#C12A23] bg-no-repeat">
+        <header class="flex flex-col items-center">
+            <img class="w-[87px] mb-3" src="./assets/logo.png" alt="logo">
+            <h1 class="text-[#FFFCF9] mb-8 font-bold text-[40px]">Não sabe o que assistir?</h1>
+        </header>
+        <button class="bg-[#E9E6E3] mb-7 rounded-md flex px-3 py-4 gap-4">
+            <img src="./assets/shuffle 2.png" alt="icone aleatorio">
+            <a class="text-gray-900" href="#">Encontrar filme</a>
+        </button>
+        <p class="text-center w-[380px] text-sm text-[#FFFCF9]">
+            Clique em "Encontrar filme" que traremos informações de algum filme para você assistir hoje.
+        </p>
+    </body>
+
+</html>
