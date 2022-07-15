@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estrutura base - jQuery</title>
+
+        <!-- jQuery-->
+        <script src="jquery-3.6.0.js"></script>
+
+        <!-- Script -->
+
+        <script>
+            // Ao carregar o documento 
+            $(document).ready(function () {
+
+                // codigo aqui
+
+                $("h1").css("display","none");
+
+                //exibir
+
+                $("#exibir").click(function() {
+                  $("h1").fadeIn("slow");  // tempo slow 0,6s
+                })
+
+                $("#ocultar").click(function() {
+                    $("h1").fadeOut(); // tempo default 0,4s
+                })
+
+                // ou pode colocar o valor como 2000 - 2s
+            });
+        </script>
+
+    </head>
+
+    <body>
+
+        <button id="exibir">Exibir</button>
+        <button id="ocultar">Ocultar</button>
+        <hr>
+        <h1>Aprendendo jQuery</h1>
+
+    </body>
+
+</html>

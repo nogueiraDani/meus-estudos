@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura base - jQuery</title>
+
+    <!-- jQuery-->
+    <script src="jquery-3.6.0.js"></script>
+
+    <!-- Script -->
+
+    <script>
+        // Ao carregar o documento 
+        $(document).ready(function(){
+
+            // codigo aqui
+            let campo = $("input").val(); // captura pela tag html
+            let titulo = $("#titulo").html(); // captura pelo id
+            let subtitulo = $(".subtitulo").html(); // captura pela class
+
+            //Exibir
+            alert(campo);
+            alert(titulo);
+            alert(subtitulo);
+
+            
+
+        });
+
+
+    </script>
+
+</head>
+<body>
+
+    <input type="text" value="Campo nome" placeholder="Nome">
+    <h1 id="titulo" >Titulo-h1</h1>
+    <h2 class="subtitulo" >Subtitulo-h2</h2>
+    
+</body>
+</html>
