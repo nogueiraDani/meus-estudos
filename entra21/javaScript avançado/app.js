@@ -1,1 +1,3 @@
-console.log("Hello world!");
+let objeto = ("Hello world!");
+
+console.log(objeto);
