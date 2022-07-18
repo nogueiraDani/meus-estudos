@@ -1,0 +1,55 @@
+<!--São os famosos hyperlinks, e a tag usada para se criar um é a <a href=" ></a>, responsável por ligar várias páginas.
+
+Em sua anatomia ele recebe atributos globais (title, id ,class,...) e o mais importante href, a referência, podendo ser url completa, fragmento, email, telefone e mais diversos outros. há também o atributo de download, que é download="", usado junto do href="",por exemplo, se você colocar o link de uma imagem no href="" com o atributo de download, a imagem será baixada ao invés de irmos até a página e se colocarmos um valor no atributo de download, ele irá dizer como você vai salvar o arquivo.
+
+Por fim temos o atributo target="", que irá dizer qual o alvo do nosso disparo, ou seja, se não tivermos o target, quando clicarmos no link, ele vai pegar o mesmo alvo, a mesma página e apenas vai trocar o conteúdo, mas se usarmos o atributo, por exemplo target="_blank", ele vai abrir uma página com o conteúdo.
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tag Ancora</title>
+    </head>
+
+    <body>
+        <p>Usando a tag ancora.</p>
+        <p>Encontre-me:</p>
+        <a href="https:www.google.com" target="_blank">Google</a><br>
+        <a href="mailto:daniela_nogueira@hotmail.com">Email</a><br>
+        <a href="tel:+5547996132898">Telefone</a><br>
+        <p>Saiba mais</p>
+        <ul>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#history">História</a></li>
+            <li><a href="#works">Trabalhos</a></li>
+        </ul>
+        <h1>Sobre mim</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro excepturi aspernatur veniam a ratione qui
+            nihil! Quisquam suscipit quidem possimus tempora cupiditate illum sint non aspernatur nemo, eius nesciunt
+            nihil?</p>
+        <h1>História</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolores quas vero molestiae eligendi fuga
+            officia incidunt deserunt facere et similique ratione quae dignissimos, quasi nihil! Sapiente blanditiis
+            perferendis dolorem.</p>
+        <h1>Trabalhos</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit maxime alias aperiam ipsum quas excepturi est
+            laboriosam nisi sequi placeat. Quaerat autem mollitia nam vero ullam animi nostrum, repellendus quisquam.
+        </p>
+        <a href="address.html" target="_blank"><h2>Abrir arquivo na mesma pasta</h2></a>
+        <a href="./atributos globais.html" target="_blank"><h2>Abrir arquivo na mesma pasta</h2></a>
+        <a href="../alura/Apeperia/index.html" target="_blank"><h2>Abrir arquivo na pasta anterior</h2></a>
+        <a href="../rocketseat/citações.html" target="_blank"><h2>Abrir arquivo na pasta anterior</h2></a>
+
+        <a href="google.com">link relativo: caminho na pasta</a><br>
+        <a href="https://www.google.com">link absoluto: pagina web</a>
+
+
+    </body>
+
+</html>

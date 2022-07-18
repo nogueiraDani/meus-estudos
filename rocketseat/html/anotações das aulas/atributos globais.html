@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+
+     <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+     </head>
+
+     <body>
+         <!--
+            atributos globais mais utilizados
+
+            class
+            contenteditable
+            data-*
+            hidden
+            id
+            style
+            tabinex
+            title
+        -->
+
+         <div class="modelo">
+             conteudo
+         </div>
+         <div class="modelo" contenteditable="true">
+             <!--contenteditable true habilita editar o texto do conteudo na pagina, mas ao carregar volta ao padrao-->
+             conteudo
+         </div>
+         <div class="modelo" data-qualquer-nome="">
+             <!--é usado no Js-->
+             conteudo
+         </div>
+         <div class="modelo" hidden>
+             <!--esconde a div-->
+             conteudo
+         </div>
+         <div class="modelo" id="name">
+             <!-- id só pode ser usado o nome 1x-->
+             conteudo
+         </div>
+         <div class="modelo" style="color: red;">
+             <!--tag style para fazer css inline-->
+             conteudo
+         </div>
+         <div class="modelo" tabindex="2">
+             conteudo 2
+         </div>
+         <div class="modelo" tabindex="1">
+             conteudo 1
+         </div>
+         <div class="modelo" tabindex="3">
+             conteudo 3
+         </div>
+         <!--tabindex direciona a sequencia que a tecla tab vai seguir, no caso de acessibilidade-->
+         <div class="modelo" title="nome que vai aparecer ao deixar o mouse sobre o texto/imagem">
+             conteudo
+         </div>
+
+         &nbsp;&nbsp;&nbsp;texto
+         <!-- &nbsp; dá espaço
+        para add caracteres especiais tem q buscar o código dele, para q o html não leia o caractere
+        -->
+     </body>
+
+ </html>

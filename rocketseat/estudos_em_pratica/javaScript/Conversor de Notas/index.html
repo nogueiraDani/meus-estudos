@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor de notas</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+            rel="stylesheet">
+
+    </head>
+
+    <body class="bg">
+
+        <header class="header">
+            <img class="header__logo" src="./assets/logo.png" alt="Logo da calculadora">
+            <h1 class="header__title">Conversor de notas</h1>
+            <p class="header__description">Conversor de notas em formato numérico para notas em formato conceito (ABC)
+            </p>
+        </header>
+        <form class="form" action="" method="get">
+            <div>
+                <label class="form__label-inicial" for="note">Nota para converter</label>
+                <input class="form__input" type="number" min="0" max="100" name="note" id="note"><br>
+                <select class="form__select-inicial" name="note__type" id="note__type-inicial">
+                    <option value="note__numerical">Nota Numérica</option>
+                    <option value="note__conceptual">Nota Conceito</option>
+                </select>
+                <label class="form__label-desired" for="form__select-desired">Para</label>
+                <select class="form__select-desired" name="note__type" id="note__type-desired">
+                    <option value="note__numerical">Nota Conceito</option>
+                    <option value="note__numerical">Nota Numérica</option>
+                </select>
+                <button class="form__button" type="submit">Converter</button>
+                <p class="result"></p>
+            </div>
+        </form>
+        <script src="./script.js"></script>
+    </body>
+
+</html>

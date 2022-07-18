@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <title>Dashboard</title>
+    </head>
+
+    <body class="flex flex-row font-poppins">
+        <header class="order-2 text-[25px] m-5">
+            Dashboard
+        </header>
+        <nav id="menu__lateral" class=" text-[15px] w-[78px] bg-[#18C29C] h-screen flex flex-col duration-500">
+            <div id="cabecalho__menu" class=" flex flex-row justify-between px-6 pt-6 mb-3 ">
+                <a href="#">
+                    <img id="icone__logo" class=" w-16 h-auto hidden duration-700" src="./assets/logo.png" alt="logo">
+                </a>
+                <img id="icone__menu" class="w-6 h-auto duration-700" src="./assets/menu.png" alt="menu">
+            </div>
+            <button class="flex flex-row mt-4 mx-4 duration-700 ">
+                <div class="flex flex-row items-center bg-[#8ED7C6] rounded-xl w-56">
+                    <img id="caixa__buscar" class=" p-3 flex flex-row items-center border-none "
+                        src="./assets/search.png" alt="Buscar">
+                    <p id="texto-caixa__buscar" class="hidden">Buscar</p>
+                </div>
+
+            </button>
+            <ul class="flex flex-col duration-700">
+                <li>
+                    <a href="#" class="flex flex-row items-center my-4 mx-6">
+                        <img class="w-6 h-auto mr-3" src="./assets/grid.png" alt="dashboard">
+                        <p id="texto__dashboard" class="hidden">Dashboad</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex flex-row items-center my-4 mx-6">
+                        <img class="w-6 h-auto mr-3" src="./assets/pet.png" alt="pet">
+                        <p id="texto__pets" class="hidden">Pets</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex flex-row items-center my-4 mx-6">
+                        <img class="w-6 h-auto mr-3" src="./assets/user.png" alt="clientes">
+                        <p id="texto__clientes" class="hidden">Clientes</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex flex-row items-center my-4 mx-6 ">
+                        <img class="w-6 h-auto mr-3" src="./assets/user-md.png" alt="veterinarios">
+                        <p id="texto__vets" class="hidden">Vets</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex flex-row items-center my-4 mx-6">
+                        <img class="w-6 h-auto mr-3" src="./assets/settings.png" alt="ajustes">
+                        <p id="texto__ajustes" class="hidden">Ajustes</p>
+                    </a>
+                </li>
+            </ul>
+            <div id="" class="flex justify-start duration-700 grow ">
+                <a href="#" id="caixa__logout" class="flex flex-row w-[78px] items-center mt-auto duration-700 bg-[#8ED7C6] h-[60px] ">
+                    <img id="imagem__avatar" class="ml-[14px] my-2 h-11 hidden duration-700" src="./assets/avatar.png" alt="usuário">
+                    <div id="informacao__Vet" class="flex flex-col ml-2 grow hidden duration-700">
+                        <p class="">Eleanor Pena</p>
+                        <p class="text-xs">Veterinária</p>
+                    </div>
+                    <img id="icone__logout" class="w-6 h-auto grow-0 mx-auto" src="./assets/log-out.png" alt="log-out">
+                </a>
+            </div>
+        </nav>
+        <script src="./script.js"></script>
+    </body>
+
+</html>

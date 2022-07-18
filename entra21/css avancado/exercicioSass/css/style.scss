@@ -1,0 +1,97 @@
+//cores do projeto.
+
+$yellow: #ffcc29;
+$blue: #1d539e;
+$gray: #828799;
+$white: #ffffff;
+$black: #1E2338;
+$page-background: #f9fbfc;
+
+$font-stack: 'Open Sans', sans-serif;
+
+@mixin style-card(){
+    padding: 5px;
+    width: 25vw;
+    border-radius: 8px;
+    background-color: $yellow;
+    border-color: $black;
+    height: 50vh;
+    margin: 250px 10px 0 10px;
+}
+
+/* @mixin style-text (tamanho, cor, peso) {
+    font-size: tam;
+    font-weight:peso;
+    color:cor;
+} */
+
+.cabecalho {
+    background-color: $blue;
+    height: 50vh;
+    font-family: $font-stack;
+    color: $white;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+}
+
+.cabecalho-titulo {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 0.3em;
+}
+
+.cabecalho-subtitulo {
+    padding: 1em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .cabecalho-titulo {
+        font-size: 1.4em;
+    }
+    .cabecalho-subtitulo {
+        font-size: 0.9em;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    order: 1;
+    position: relative;
+}
+
+
+.card-free, .card-basico, .card-profissional {
+    font-family: $font-stack;
+    @include style-card;
+}
+
+/*.card-free__titulo, .card-basico__titulo, .card-profissional__titulo {
+    @include style-text(14px, $black, 400);
+}*/
+
+.card-free__preco, .card-basico__preco, 
+.card-profissional__preco {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.card-free__condicao, .card-basico__condicao, 
+.card-profissional__condicao {
+    font-size:18px;
+    font-weight: 400;
+    color: $gray
+}
+
+.card-free__descricao, .card-basico__descricao,
+.card-profissional__descricao {
+    font-size: 14px;
+    font-weight:400;
+    color:$gray;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <%- include("../parts/head") %>
+
+    <body class="container">
+
+        <%- include("../parts/header") %>
+
+        <main>
+            <div class="bg-light p-5 rounded-lg m-3">
+                <h1>Node com EJS</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero, repellat nihil cumque
+                    unde consequatur consectetur sunt, dolores porro nam qui, minus corrupti nobis quod. Saepe a
+                    distinctio fuga illo?</p>
+            </div>
+            <p><%= subtitle %></p>
+            <ul>
+                <% qualitys.forEach(function (quality) { %>
+
+                <li>
+                    <strong> <%= quality.title%> </strong> <%= quality.message %>
+                </li>
+
+                <% }) %>
+            </ul>
+
+
+        </main>
+
+        <%- include("../parts/footer", {pagina: 'Home'}) %>
+
+    </body>
+
+</html>

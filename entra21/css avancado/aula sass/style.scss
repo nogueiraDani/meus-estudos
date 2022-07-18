@@ -1,0 +1,16 @@
+$blue: lightblue;
+$background: lightpink;
+
+h1 {
+    color: $blue;
+    background-color: $background;
+}
+
+@mixin fundoPreto(){ // mixin no Sass
+    color: white;
+    background-color: black;
+}
+
+p {
+    @include fundoPreto(); // para chamar o mixin tem q add o @include
+}
