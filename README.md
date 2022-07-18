@@ -1,3 +1,3 @@
-# meus projetos 
+# meus estudos
 
-Contém o meu portfólio de projetos pessoais.
+Contém as anotações de aulas variadas.
